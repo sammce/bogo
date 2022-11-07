@@ -12,6 +12,12 @@ Clone the repo:
 git clone https://github.com/sammce/bogo.git
 ```
 
+`cd` into the repo directory:
+
+```sh
+cd bogo
+```
+
 Setup a Python virtual environment (optional, but recommended):
 
 ```sh
