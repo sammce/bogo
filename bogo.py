@@ -22,7 +22,7 @@ PERMS_PER_SECOND = 220 # Rough estimate for analytical purposes
 fast_threshold_without_delay = factorial(LIST_LENGTH // 2) * (1 / PERMS_PER_SECOND)
 fast_threshold_with_delay = factorial(LIST_LENGTH // 2) * BAR_CHART_DELAY + fast_threshold_without_delay
 
-print(f"list length = {LIST_LENGTH}, iterations = {ITERATIONS}, delay = {BAR_CHART_DELAY}")
+print(f"list length = {fmt.bold(LIST_LENGTH)}, iterations = {fmt.bold(ITERATIONS)}, delay = {fmt.bold(BAR_CHART_DELAY)}")
 print("-" * SEPARATOR_LEN)
 # Output expected time to sort
 expected_duration = round(factorial(LIST_LENGTH) * BAR_CHART_DELAY, ROUND_TO)
