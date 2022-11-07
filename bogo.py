@@ -5,19 +5,21 @@ from time import perf_counter, sleep
 
 from samutil.formatting import Formatter as fmt
 
+# ---- Important constants ----
 LIST_LENGTH = 4
-
-SEPARATOR_LEN = 40
-
-PERMS_PER_SECOND = 200
-FAST_THRESHOLD_WITHOUT_DELAY = (factorial(LIST_LENGTH // 2)) * (1 / PERMS_PER_SECOND)
-FAST_THRESHOLD_WITH_DELAY = FAST_THRESHOLD_WITHOUT_DELAY * 50
-
-BAR_CHART_DELAY = 0.1 # Seconds
-BAR_CHART_CHAR = "bogo"
-
 ITERATIONS = 20
+BAR_CHART_DELAY = 0.1 # Seconds
+BAR_CHART_CHAR = "bogo" # The chart is made up of this string
+# -----------------------------
+
+# --- Less important, but configurable -----------------------
 ROUND_TO = 4  # Decimal places
+SEPARATOR_LEN = 40 # Length of horizontal divider printed after each pass
+PERMS_PER_SECOND = 200 # Rough estimate for analytical purposes
+# ------------------------------------------------------------
+
+FAST_THRESHOLD_WITHOUT_DELAY = (factorial(LIST_LENGTH // 2)) * (1 / PERMS_PER_SECOND)
+FAST_THRESHOLD_WITH_DELAY = factorial(LIST_LENGTH // 2) * BAR_CHART_DELAY
 
 print(f"list length = {LIST_LENGTH}, iterations = {ITERATIONS}, delay = {BAR_CHART_DELAY}")
 
