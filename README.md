@@ -46,9 +46,9 @@ python3 bogo.py
 # Configuration
 
 The following table shows the configurable constants at the top of `bogo.py` and what they're for:
-| Name              | Purpose                                             | Default | Type  |
-| ----------------- | --------------------------------------------------- | ------- | ----- |
-| `LIST_LENGTH`     | The length of the list being sorted by bogo         | 4       | int   |
-| `ITERATIONS`      | How many passes the program should do               | 20      | int   |
-| `BAR_CHART_DELAY` | The delay, in seconds, between each chart render    | 0.1     | float |
-| `BAR_CHART_CHAR`  | The string to use when representing the lists items | "bogo"  | str   |
+| Name              | Purpose                                             | Default  | Type    |
+| ----------------- | --------------------------------------------------- | -------- | ------- |
+| `LIST_LENGTH`     | The length of the list being sorted by bogo         | `4`      | `int`   |
+| `ITERATIONS`      | How many passes the program should do               | `20`     | `int`   |
+| `BAR_CHART_DELAY` | The delay, in seconds, between each chart render    | `0.1`    | `float` |
+| `BAR_CHART_CHAR`  | The string to use when representing the lists items | `"bogo"` | `str`   |
